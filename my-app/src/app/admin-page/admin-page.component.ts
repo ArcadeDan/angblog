@@ -12,7 +12,7 @@ import { DeletePopupComponent } from '../delete-popup/delete-popup.component';
 })
 export class AdminPageComponent {
 
-  
+
   constructor(private dialog: MatDialog) { }
 
   openCreatePopup() {
