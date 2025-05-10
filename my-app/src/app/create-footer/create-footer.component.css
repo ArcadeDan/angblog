@@ -10,3 +10,30 @@
     color: #6c757d; /* Muted text color */
     border-top: 1px solid #dee2e6; /* Optional border for separation */
   }
+
+
+  /* Popup box styles */
+.popup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  width: 300px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 10px; /* Add spacing between elements */
+}
+
+.popup-content h3 {
+  margin: 0 0 10px;
+  text-align: center;
+}

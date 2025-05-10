@@ -107,3 +107,53 @@ body.dark-mode {
     color: #cccccc; /* Light text */
     border-top: 1px solid #444444; /* Darker border for separation */
   }
+
+
+  /* Popup box styles */
+.popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 300px;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add spacing between elements */
+  }
+  
+  .popup-content h3 {
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .popup-box {
+    background-color: #2a2a2a; /* Dark background */
+    border: 1px solid #444; /* Darker border */
+    color: #ffffff; /* Light text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for dark mode */
+  }
+  
+  body.dark-mode .popup-content input {
+    background-color: #444; /* Dark input background */
+    color: #ffffff; /* Light text */
+    border: 1px solid #666; /* Darker border */
+  }
+  
+  body.dark-mode .popup-content button {
+    background-color: #007bff; /* Button background */
+    color: #ffffff; /* Button text */
+  }
+  
+  body.dark-mode .popup-content button:hover {
+    background-color: #0056b3; /* Darker hover color */
+  }

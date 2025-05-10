@@ -12,7 +12,8 @@ import { VideosLayoutComponent } from './videos-layout/videos-layout.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CreateDarkmodeButtonComponent } from './create-darkmode-button/create-darkmode-button.component'; // Import MatCardModule
 import { MatIconModule } from '@angular/material/icon';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()

@@ -1,3 +1,17 @@
 <footer class="footer-bar">
-    <p>by Dan Sparks</p>
-  </footer>
+  <p>by Dan Sparks</p>
+  <button (click)="togglePopup()">Open Popup</button>
+</footer>
+
+<!-- Popup Box -->
+<div class="popup-box" *ngIf="isPopupVisible">
+  <div class="popup-content">
+    <h3>Join my e-mail list</h3>
+    <label for="field1">Name</label>
+    <input id="field1" type="text" [(ngModel)]="name" placeholder="Enter your name" />
+    <label for="field2">Email</label>
+    <input id="field2" type="email" [(ngModel)]="email" placeholder="Enter your email" />
+    <button (click)="submitData()">Submit</button>
+    <button (click)="togglePopup()">Close</button>
+  </div>
+</div>
