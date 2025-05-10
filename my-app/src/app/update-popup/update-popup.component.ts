@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { User } from '../models/user.interface';
 
 @Component({
   selector: 'app-update-popup',
@@ -13,9 +14,9 @@ export class UpdatePopupComponent {
 
   constructor(private http: HttpClient) { }
   updateUser() {
-    const data = {name: this.name, email: this.email };
+    const updatedUser: Partial<User> = {name: this.name, email: this.email };
     const url = `http://localhost:3000/api/users/${this.id}`; // Include the ID in the URL
-    this.http.put(url, data).subscribe(
+    this.http.put<User>(url, updatedUser).subscribe(
       (response) => {
         console.log('User updated:', response);
       },

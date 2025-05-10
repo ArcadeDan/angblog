@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { User } from '../models/user.interface';
 
 @Component({
   selector: 'app-delete-popup',
@@ -7,11 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './delete-popup.component.css'
 })
 export class DeletePopupComponent {
-  id = '';
+  id: User['id'] = 0; // Initialize id to a default value
 
   constructor(private http: HttpClient) { }
   deleteUser() {
-    this.http.delete(`http://localhost:3000/api/users/${this.id}`).subscribe(
+    const url = `http://localhost:3000/api/users/${this.id}`; // Include the ID in the URL
+    this.http.delete<User>(url).subscribe(
       (response) => {
         console.log('User deleted:', response);
       },

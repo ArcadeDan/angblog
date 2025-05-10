@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { User } from '../models/user.interface';
 
 @Component({
   selector: 'app-create-popup',
@@ -13,8 +14,8 @@ export class CreatePopupComponent {
   constructor(private http: HttpClient) {}
 
   createUser() {
-    const data = { name: this.name, email: this.email };
-    this.http.post('http://localhost:3000/api/submit', data).subscribe(
+    const newUser: Omit<User, "id"> = { name: this.name, email: this.email };
+    this.http.post('http://localhost:3000/api/submit', newUser).subscribe(
       (response) => {
         console.log('User created:', response);
       },

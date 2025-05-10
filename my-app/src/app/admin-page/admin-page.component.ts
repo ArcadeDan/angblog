@@ -11,6 +11,8 @@ import { DeletePopupComponent } from '../delete-popup/delete-popup.component';
   styleUrl: './admin-page.component.css'
 })
 export class AdminPageComponent {
+
+  
   constructor(private dialog: MatDialog) { }
 
   openCreatePopup() {
