@@ -16,12 +16,13 @@ export class CreateFooterComponent {
 
   submitData(): void {
     const data = { name: this.name, email: this.email };
+    console.log('Sending data to backend:', data); // Log data being sent
     this.http.post('http://localhost:3000/api/submit', data).subscribe(
       (response) => {
-        console.log('Data submitted successfully:', response)
+        console.log('Response from backend:', response); // Log backend response
       },
       (error) => {
-        console.error('Error submitting data:', error);
+        console.error('Error from backend:', error); // Log error
       }
     );
   }
