@@ -1,0 +1,21 @@
+.background-box {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;   
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+
+  .video-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px; /* Space between videos */
+    padding: 16px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  .video-item {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 300px; /* Set a fixed width for each video */
+  }

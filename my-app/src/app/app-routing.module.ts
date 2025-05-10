@@ -5,15 +5,8 @@ import { VideosLayoutComponent } from './videos-layout/videos-layout.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: 'videos', component: VideosLayoutComponent,
-    children: [
-      { path: '', component: VideosPageComponent }, // Default route for /videos
-    ]
-
-   }, // Route for /videos
-   {
-    path: '', component: HomePageComponent
-   }
+  { path: 'videos', component: VideosPageComponent, }, // Route for /videos
+  { path: '', component: HomePageComponent,}
 ];
 
 @NgModule({
