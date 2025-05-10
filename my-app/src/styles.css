@@ -2,3 +2,108 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+  body.dark-mode .background-box {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
+  }
+
+
+
+  /* Default styles (light mode) */
+.nav-bar {
+    background-color: #07cf61; /* Light gray background */
+    padding: 16px 0;
+  }
+  
+  .nav-cards {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  mat-card {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  mat-card:hover {
+    transform: scale(1.05);
+  }
+  
+  mat-card-title a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  mat-card-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .nav-bar {
+    background-color: #121212 !important; /* Match the body's background color */
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode .nav-cards {
+    background-color: 121212; /* Darker background for cards */
+  }
+  
+  body.dark-mode mat-card {
+    background-color: #333333; /* Dark card background */
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode mat-card-title a {
+    color: #4dabf7; /* Light blue text for links */
+  }
+  
+  body.dark-mode .header h1 {
+    color: #4dabf7; /* Light blue header text */
+  }
+
+
+  body.dark-mode .footer-bar {
+    background-color: #1a1a1a; /* Dark background */
+    color: #cccccc; /* Light text */
+    border-top: 1px solid #444444; /* Darker border for separation */
+  }

@@ -19,3 +19,36 @@
     flex: 0 0 auto; /* Prevent shrinking */
     width: 300px; /* Set a fixed width for each video */
   }
+
+  .video-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar styles for WebKit browsers */
+  .video-scroll-container::-webkit-scrollbar {
+    height: 8px; /* Height of the horizontal scrollbar */
+  }
+  
+  .video-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background */
+  }
+  
+  .video-scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb (scroll handle) color */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .video-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+
+ 
+  .centered-title {
+    text-align: center; /* Centers the text horizontally */
+    margin: 0 auto; /* Ensures the element is centered horizontally */
+    display: block; /* Ensures the element behaves like a block for centering */
+  }

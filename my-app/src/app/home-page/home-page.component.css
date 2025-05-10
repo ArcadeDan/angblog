@@ -1,3 +1,4 @@
+/* Default styles (light mode) */
 .nav-bar {
     background-color: #07cf61; /* Light gray background */
     padding: 16px 0;
@@ -30,7 +31,6 @@
   mat-card-title a:hover {
     text-decoration: underline;
   }
-
   
   .header {
     text-align: center;
@@ -43,19 +43,16 @@
     font-weight: bold;
     margin: 0;
   }
-
-
-.background-box {
-  background-color: #f0f0f0; /* Light gray background */
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;   
-  max-width: 1200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
-
-
-
+  
+  .background-box {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
   .footer-bar {
     background-color: #f8f9fa; /* Light gray background */
     text-align: center;
@@ -66,4 +63,39 @@
     font-size: 0.8rem;
     color: #6c757d; /* Muted text color */
     border-top: 1px solid #dee2e6; /* Optional border for separation */
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .nav-bar {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode .nav-cards {
+    background-color: #2a2a2a; /* Darker background for cards */
+  }
+  
+  body.dark-mode mat-card {
+    background-color: #333333; /* Dark card background */
+    color: #ffffff; /* Light text */
+  }
+  
+  body.dark-mode mat-card-title a {
+    color: #4dabf7; /* Light blue text for links */
+  }
+  
+  body.dark-mode .header h1 {
+    color: #4dabf7; /* Light blue header text */
+  }
+  
+  body.dark-mode .background-box {
+    background-color: #2a2a2a !important; /* Dark background */
+    color: #ffffff; /* Light text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  }
+  
+  body.dark-mode .footer-bar {
+    background-color: #1a1a1a; /* Dark footer background */
+    color: #cccccc; /* Light text */
+    border-top: 1px solid #444444; /* Darker border */
   }

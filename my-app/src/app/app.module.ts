@@ -9,7 +9,10 @@ import { CreateHeaderComponent } from './create-header/create-header.component';
 import { CreateFooterComponent } from './create-footer/create-footer.component';
 import { VideosPageComponent } from './videos-page/videos-page.component';
 import { VideosLayoutComponent } from './videos-layout/videos-layout.component';
-import { HomePageComponent } from './home-page/home-page.component'; // Import MatCardModule
+import { HomePageComponent } from './home-page/home-page.component';
+import { CreateDarkmodeButtonComponent } from './create-darkmode-button/create-darkmode-button.component'; // Import MatCardModule
+import { MatIconModule } from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -19,12 +22,14 @@ import { HomePageComponent } from './home-page/home-page.component'; // Import M
     CreateFooterComponent,
     VideosPageComponent,
     VideosLayoutComponent,
-    HomePageComponent
+    HomePageComponent,
+    CreateDarkmodeButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [
     provideAnimationsAsync()
