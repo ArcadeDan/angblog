@@ -4,7 +4,7 @@
     <div class="content">
         <h2 class="centered-title">Music that I like</h2>
         <div class="video-scroll-container">
-            <div class="video-item" *ngFor="let safeUrl of safeVideoUrls">
+            <div class="video-item" *ngFor="let safeUrl of musicVideoUrls">
               <iframe 
                 width="300" 
                 height="200" 
@@ -18,5 +18,73 @@
           </div>
     </div>
   </div>
+
+  <div class="background-box">
+    <div class="content">
+        <h2 class="centered-title">Why I like it</h2>
+        <p>Ever since I was a teenager, I've always been fond of slower music.
+            I find it to be a great way to unwind and relax after a long day. 
+            The soothing melodies and gentle rhythms help me escape the stresses of daily life. 
+            Whether I'm working, studying, or just taking a moment for myself, 
+            this type of music creates the perfect atmosphere for reflection and tranquility.
+            <br><br>
+            My first love for music came from the band, Pink Floyd. As a teenager and going through my own
+            hardships and rampant hormones, I found them to relay a message that I quite relate to, even to this day.
+            All of Pink Floyd's albums are of their own story, and after listening to their discography numerous of times,
+            I can say that they all build off one another and even reference each other.
+            <br><br>
+            I guess Pink Floyd would be the start of my love for slow music. I find slow music to take itself less seriously.
+            I say it's easier to digest the idea of a song when it is slower. I am not saying that fast music is bad,
+            <br>
+            but I find it to be more of a challenge to listen to.
+            <br><br> 
+            I find that fast music is more about the beat and the rhythm,
+            <br>
+            while slow music is more about the lyrics and the message. I find that slow music is more about the journey,
+            <br>
+            while fast music is more about the destination. I find that slow music is more about the experience,
+            <br>
+            while fast music is more about the result. I find that slow music is more about the process,
+            <br>
+            while fast music is more about the product. I find that slow music is more about the art,
+        </p>
+    </div>
+  </div>
+
+
+<div class="background-box">
+  <div class="content">
+      <h2 class="centered-title">Videos that I like</h2>
+      <div class="video-scroll-container">
+          <div class="video-item" *ngFor="let safeUrl of safeVideoUrls">
+            <iframe 
+              width="300" 
+              height="200" 
+              [src]="safeUrl" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+s
+
 
 <app-create-footer></app-create-footer>

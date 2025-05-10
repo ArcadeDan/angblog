@@ -1,0 +1,22 @@
+.popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Light background for light mode */
+    color: #333; /* Dark text for light mode */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 400px;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .popup-box {
+    background-color: #333; /* Dark background for dark mode */
+    color: #f1f1f1; /* Light text for dark mode */
+    border: 1px solid #444; /* Darker border for dark mode */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle shadow for dark mode */
+  }

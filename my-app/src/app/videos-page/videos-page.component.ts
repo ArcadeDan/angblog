@@ -15,12 +15,25 @@ export class VideosPageComponent {
     'Orlbo9WkZ2E?si=mK0z8jTSgf3ddJMK', // guillotine - death grips
     'DDxlzKQ9D0Q?si=OhogE-88Wo3GmQ50', // pancake - swirlies
     'Q0GecOmPQYA?si=wrEBxP9o6EeMic-o', // roseblood - mazzy star
+    'jMOynjuAPvM?si=HfNWfZ_m1b-U7tcq', // jugband blues - pink floyd
+    '5BIElTtN6Fs?si=PZEl-86vOnLEVU30', // disorder - joy division
+  ]
+
+  videoIds: string[] = [
+    'gfVmtaOUER8?si=0E4QWgY2qlvbO__d', // mandelbrot set for idiots
+    'HIjso98JGpM?si=Nphy6bhjUqWQp0Cq', // ignorant guide to shoegaze
   ]
 
   safeVideoUrls: SafeResourceUrl[] = [];
+  musicVideoUrls: SafeResourceUrl[] = [];
   constructor(private sanitizer: DomSanitizer) {
-  this.safeVideoUrls = this.musicIds.map(id =>
+  this.musicVideoUrls = this.musicIds.map(id =>
     this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}`)
   );
+
+  this.safeVideoUrls = this.videoIds.map(id =>
+    this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}`)
+  );
+
 }
 }

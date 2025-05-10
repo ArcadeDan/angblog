@@ -1,3 +1,6 @@
-<button (click)="toggleDarkMode()" mat-icon-button>
-    <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
-  </button>
+
+<!-- This is a button that toggles between dark mode and light mode via two way binding -->
+
+<button [(ngModel)]="isDarkMode" (click)="toggleDarkMode()" mat-icon-button>
+  <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+</button>

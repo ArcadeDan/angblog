@@ -14,6 +14,11 @@ import { CreateDarkmodeButtonComponent } from './create-darkmode-button/create-d
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { CreatePopupComponent } from './create-popup/create-popup.component';
+import { ReadPopupComponent } from './read-popup/read-popup.component';
+import { UpdatePopupComponent } from './update-popup/update-popup.component';
+import { DeletePopupComponent } from './delete-popup/delete-popup.component';
 
 
 @NgModule({
@@ -24,7 +29,12 @@ import { FormsModule } from '@angular/forms';
     VideosPageComponent,
     VideosLayoutComponent,
     HomePageComponent,
-    CreateDarkmodeButtonComponent
+    CreateDarkmodeButtonComponent,
+    AdminPageComponent,
+    CreatePopupComponent,
+    ReadPopupComponent,
+    UpdatePopupComponent,
+    DeletePopupComponent
   ],
   imports: [
     BrowserModule,
